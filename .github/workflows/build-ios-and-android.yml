@@ -66,7 +66,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Bundle *.aap & *.apk
-        run: cd /android && ./gradlew bundleRelease assembleRelease
+        run: ./android/gradlew bundleRelease assembleRelease
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
